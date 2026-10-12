@@ -1,0 +1,6 @@
+__pycache__/
+.DS_Store
+server_files/
+downloads/
+dl_*/
+bench_downloads/

@@ -1,0 +1,39 @@
+HERMES/1.0 performance experiments
+server: 127.0.0.1:9000
+
+=== Test 1: one client, message and response ===
+rounds          : 500
+average RTT     : 0.049 ms
+median RTT      : 0.047 ms
+minimum RTT     : 0.041 ms
+maximum RTT     : 0.076 ms
+
+=== Test 2: server sends a message to 5 clients ===
+clients         : 5
+broadcasts      : 100
+average response: 0.064 ms
+median response : 0.063 ms
+slowest         : 0.106 ms
+
+=== Test 3: 10 clients downloading at the same time ===
+
+file size: 1MB
+total moved     : 10.0 MB
+wall clock      : 0.005 s
+throughput      : 1.9 GB/s
+fastest client  : 0.002 s
+slowest client  : 0.003 s
+
+file size: 100MB
+total moved     : 1000.0 MB
+wall clock      : 0.187 s
+throughput      : 5.2 GB/s
+fastest client  : 0.179 s
+slowest client  : 0.185 s
+
+file size: 1GB
+total moved     : 10.0 GB
+wall clock      : 1.884 s
+throughput      : 5.3 GB/s
+fastest client  : 1.873 s
+slowest client  : 1.882 s
